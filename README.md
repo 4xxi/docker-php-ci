@@ -1,1 +1,1 @@
-# docker-php-fpm
+# Docker image for CI
