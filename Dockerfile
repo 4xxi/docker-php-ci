@@ -1,6 +1,6 @@
 FROM php:7.4-fpm-alpine3.12
 
-RUN apk update && apk add --no-cache libxml2-dev ttf-freefont libzip-dev rabbitmq-c rabbitmq-c-dev icu-dev postgresql-dev \
+RUN apk update && apk add --no-cache openssh libxml2-dev ttf-freefont libzip-dev rabbitmq-c rabbitmq-c-dev icu-dev postgresql-dev \
     && apk add --no-cache --virtual .build-deps $PHPIZE_DEPS \
     && apk add --no-cache --no-progress --virtual .build-gpg-deps gpgme-dev \
     && apk add --no-cache --no-progress gpgme \
